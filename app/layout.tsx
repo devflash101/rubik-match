@@ -1,9 +1,6 @@
 import "./globals.css"
 
-export default function RootLayout({
-    children,
-    profile,
-} : {
+export default function RootLayout( props:{
     children: React.ReactNode,
     profile: React.ReactNode
 }) {
@@ -13,8 +10,8 @@ export default function RootLayout({
             {/* Layout UI */}
             {/* Place children where you want to render a page or nested layout */}
             <main>
-              {children}
-              {profile}
+              {props.children}
+              {props.profile}
             </main>
           </body>
         </html>
