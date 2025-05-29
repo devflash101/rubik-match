@@ -12,3 +12,8 @@ export async function GET(request:Request,
     })
     // api/match/3_3?query=hello
 }
+
+export async function POST(request:Request) {
+    const res = await request.json();
+    return Response.json({res});
+}
