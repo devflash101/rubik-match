@@ -7,7 +7,10 @@ export default async function Home({
 }) {
 
   const {type} = await params;
-  if (type[0] == 'back') {
+  // if(!type) {
+  //   redirect('/')
+  // }
+  if (type && type[0] == 'back') {
     redirect('/')
   }
   return (
